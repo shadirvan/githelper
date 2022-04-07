@@ -13,11 +13,17 @@ all git usages is one place!
 `https://docs.github.com/en/authentication/connecting-to-github-with-ssh`
 ## create a repository from command line
 `echo "# test" >> README.md`
+
 `git init`
+
 `git add README.md`
+
 `git commit -m "first commit"`
+
 `git branch -M main`
+
 `git remote add origin git@github.com:shadirvan/test.git`
+
 `git push -u origin main`
 
 
@@ -31,5 +37,7 @@ all git usages is one place!
 `$ git push`
 ## push an existing repository from the command line
 `git remote add origin git@github.com:shadirvan/hello.git`
+
 `git branch -M main`
+
 `git push -u origin main`
