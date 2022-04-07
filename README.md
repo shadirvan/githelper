@@ -9,8 +9,17 @@ all git usages is one place!
 `$ eval "$(ssh-agent -s)"`
 * Add your SSH private key to the ssh-agent. If you created your key with a different name, or if you are adding an existing key that has a different name, replace id_ed25519 in the command with the name of your private key file. <br>
 `ssh-add ~/.ssh/id_ed25519`
-## create a repository
-easy way to create a repository is by going to github and create one. and follow the instructions
+* refer this link for detailed guide <br>
+`https://docs.github.com/en/authentication/connecting-to-github-with-ssh`
+## create a repository from command line
+`echo "# test" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:shadirvan/test.git
+git push -u origin main`
+
 
 ## after making changes
 * check status of git using <br> `$ git status`
@@ -20,4 +29,7 @@ easy way to create a repository is by going to github and create one. and follow
 `$ git commit -m "message here" -m "description"`
 * push it to github with this command
 `$ git push`
-
+## push an existing repository from the command line
+`git remote add origin git@github.com:shadirvan/hello.git
+git branch -M main
+git push -u origin main`
