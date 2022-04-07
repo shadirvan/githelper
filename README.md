@@ -12,6 +12,7 @@ all git usages is one place!
 * refer this link for detailed guide <br>
 `https://docs.github.com/en/authentication/connecting-to-github-with-ssh`
 ## create a repository from command line
+first create a repository on github<br>
 `echo "# test" >> README.md`
 
 `git init`
